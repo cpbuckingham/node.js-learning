@@ -9,7 +9,7 @@ Person.favFood = "salad";
 console.log(cam.favFood);
 
 
-//diff b/w == & =
+//diff b/w == & ====
 console.log(19=='19');//true
 //^compare values
 console.log(19==='19');//false
