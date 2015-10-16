@@ -1,16 +1,18 @@
 var cam = {
-    favFood: "bacon",
-    favMovie: "Chappie"
+
+    printFirstName: function(){
+        console.log("My name is cam");
+        console.log(this === cam);
+    }
 };
 
-var Person = cam;
-//^reference, not a copy
-Person.favFood = "salad";
-console.log(cam.favFood);
+cam.printFirstName();
 
 
-//diff b/w == & ====
-console.log(19=='19');//true
-//^compare values
-console.log(19==='19');//false
-//^compare values and types
+//the default calling context is global
+function doSomething(){
+    console.log("\nI am worthless");
+    console.log(this === global);
+
+}
+doSomething();
