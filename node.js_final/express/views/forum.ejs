@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+<%include templates/header.ejs%>
+
+<h1><%= title %></h1>
+<h2><%= name %></h2>
+<p>Welcome to <%= title %></p>
+<ul>
+    <% for(var i=0; i<5; i++){%>
+    <li>forum</li>
+    <%}%>
+</ul>
+</body>
+</html>
+
